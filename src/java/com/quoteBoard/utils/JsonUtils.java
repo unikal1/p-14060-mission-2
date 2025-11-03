@@ -22,7 +22,7 @@ public class JsonUtils {
         sb.append("[\n");
         for(String json : jsons) {
             json = json.trim();
-            sb.append("\t\t").append(json).append(",").append("\n");
+            sb.append("\t").append(json).append(",").append("\n");
         }
         if(!jsons.isEmpty()) {
             int lastCommaIdx = sb.lastIndexOf(",");
